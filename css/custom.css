@@ -135,4 +135,11 @@ span.card-title {
     height: 44rem;
     border-radius: 17px;
 }
+nav.nav-wrapper.white {
+  height: 7rem;
+  align-content: center;
+}
+div.col.s12.m2 a img.responsive-img {
+  max-width: 5rem;
+}
 }
