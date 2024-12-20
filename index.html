@@ -31,23 +31,26 @@
 <body>
 
   <!-- Navbar com Sidenav (Menu Hambúrguer) -->
-  <nav class="nav-wrapper white">
-    <div class="container">
-      <a href="#" class="brand-logo"><img src="img/logo.png" width="50px"></a>
-      <!-- Menu para dispositivos grandes (desktop) -->
-      <ul class="right hide-on-small-only">
-        <li><a href="#" class=" grey-text">Início</a></li>
-        <li><a href="#" class=" grey-text">Restaurantes</a></li>
-        <li><a href="#" class=" grey-text">Ofertas</a></li>
-        <li><a href="#" class=" grey-text">Promoções</a></li>
-        <li><a href="#" class="waves-effect waves-light btn white-text red" style="border-radius: 8px;">Entrar</a></li>
-      </ul>
-      <!-- Icone de Menu (Hambúrguer) para dispositivos pequenos -->
-      <a href="#" data-target="mobile-menu" class="sidenav-trigger">
-        <i class="material-icons " style="color: grey;">menu</i>
-      </a>
-    </div>
-  </nav>
+  <div class="navbar-fixed">
+    <nav class="nav-wrapper white">
+      <div class="container">
+        <a href="#" class="brand-logo"><img src="img/logo.png" width="50px"></a>
+        <!-- Menu para dispositivos grandes (desktop) -->
+        <ul class="right hide-on-small-only">
+          <li><a href="#" class=" grey-text">Início</a></li>
+          <li><a href="#" class=" grey-text">Restaurantes</a></li>
+          <li><a href="#" class=" grey-text">Ofertas</a></li>
+          <li><a href="#" class=" grey-text">Promoções</a></li>
+          <li><a href="#" class="waves-effect waves-light btn white-text red" style="border-radius: 8px;">Entrar</a></li>
+        </ul>
+        <!-- Icone de Menu (Hambúrguer) para dispositivos pequenos -->
+        <a href="#" data-target="mobile-menu" class="sidenav-trigger">
+          <i class="material-icons " style="color: grey;">menu</i>
+        </a>
+      </div>
+    </nav>
+
+  </div>
 
   <!-- Menu Lateral (Sidenav) para Dispositivos Móveis -->
   <ul class="sidenav" id="mobile-menu">
