@@ -1,40 +1,38 @@
 # iFood Homepage Clone 🚀
 
-This project is a reproduction of the iFood homepage designed to learn and apply concepts from the **Materialize CSS** framework. It also serves as a practice for developing modern and responsive interfaces.
+This project is a reproduction of the iFood homepage designed to learn and apply concepts from the **Materialize CSS** framework. It was created as part of a Web Development 1 course to practice building modern and responsive interfaces while solidifying foundational web design skills.
 
 ## 📋 Features
 
 - Responsive structure using **Materialize CSS**.
 - Design inspired by the iFood homepage interface.
 - Use of components like **navbar**, **cards**, and **footers** from Materialize.
-- Practice of best practices in HTML, CSS, and JavaScript.
 ## 📷 Screenshots 
 ### Desktop Version 
-![Desktop View](https://i.imgur.com/LFC0FjU.png) 
+<img src="https://i.imgur.com/LFC0FjU.png" width="1000">
+
 ### Mobile Version
-![Mobile View](https://i.imgur.com/YOClMXW.jpeg) 
---- 
+<img src="https://i.imgur.com/YOClMXW.jpeg" width="300" />
 
-## 🚀 Technologies This project was developed using the following technologies: 
-| Technology | Icon | 
-|---------------------|--------------------------------------------------| 
-| HTML5 | ![HTML5](https://cdn.jsdelivr.net/npm/devicon/icons/html5/html5-original.svg) | 
-| CSS3 | ![CSS3](https://cdn.jsdelivr.net/npm/devicon/icons/css3/css3-original.svg) | 
-| JavaScript | ![JavaScript](https://cdn.jsdelivr.net/npm/devicon/icons/javascript/javascript-original.svg) | 
-| Materialize CSS | ![Materialize]([https://cdn.jsdelivr.net/npm/devicon/icons/materialize/materialize-original.svg](https://github-production-user-asset-6210df.s3.amazonaws.com/136815194/265605607-dc393bd9-90b8-40d6-b396-dd9e547890c9.png)) | 
+## 🚀 Technologies : 
+| Technology       | Icon                                                             | 
+|------------------|------------------------------------------------------------------| 
+| HTML5            | <img src="https://cdn.jsdelivr.net/npm/devicon/icons/html5/html5-original.svg" width="30" /> | 
+| CSS3             | <img src="https://cdn.jsdelivr.net/npm/devicon/icons/css3/css3-original.svg" width="30" /> | 
+| JavaScript       | <img src="https://cdn.jsdelivr.net/npm/devicon/icons/javascript/javascript-original.svg" width="30" /> | 
+| Materialize CSS  | <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/136815194/265605607-dc393bd9-90b8-40d6-b396-dd9e547890c9.png" width="30" /> | 
 
-Icons sourced from [Devicon](https://devicon.dev/). ---
-
+Icons sourced from [Devicon](https://devicon.dev/).
 ## 📦 Project Structure
 
-├── index.html # Main page 
-├── css/ 
-│ └── style.css # Additional styles 
-├── js/ 
-│ └── script.js # Scripts for interactivity 
-├── img/ 
-│ └── (images used in the project) 
-└── README.md # Documentation
+- `index.html` - Main page of the project  
+- `css/` - Stylesheets folder:  
+  - `custom.css` - Custom styles for the project  
+  - `materialize.css` - Full Materialize CSS framework  
+  - `materialize.min.css` - Minified Materialize CSS framework  
+- `fonts/` - Fonts used in the project  
+- `img/` - Images folder  
+- `js/` - Scripts folder  
 
 
 ## 🎯 Learning Objectives
@@ -62,10 +60,6 @@ The homepage includes elements such as:
 
 - [Materialize CSS](https://materializecss.com/)
 - [iFood Website](https://www.ifood.com.br/)
-
-## 🤝 Contributions
-
-Contributions are welcome! Feel free to open issues or pull requests for improvements.
 
 ---
 
