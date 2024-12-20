@@ -112,17 +112,27 @@ h1.black-text.center.mt-3.mb-4.mx-2 {
 }
 
 .card-content.red.accent-4, .card-content.light-green {
-  height: 24rem;
+  height: 28rem;
   border-radius: 17px;
 }
 
-
 a.btn.red.accent-4.white-text.valign-wrapper.col.s12.center-align, a.btn.light-green.white-text.valign-wrapper.col.s12.center-align {
-  margin-top: 11rem;
+  margin-top: 12rem;
+  
 }
 .card.red.accent-4.white-text.hoverable, .card.light-green.white-text.hoverable {
   border-radius: 34px;
 }
 .card.yellow.center-align.hoverable, .card.pink.lighten-4.center-align.hoverable, .card.purple.darken-1.center-align.hoverable {
   border-radius: 3rem;
+}
+span.card-title {
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+@media (max-width:600px){
+  .card-content.red.accent-4, .card-content.light-green {
+    height: 44rem;
+    border-radius: 17px;
+}
 }
