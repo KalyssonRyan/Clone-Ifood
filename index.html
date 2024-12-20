@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>iFood - Página Inicial</title>
   <!-- Importação do Materialize CSS -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/materialize.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <style>
     .hero-image {
       background-image: url('img/fundo.png');
       /* Adicione sua imagem aqui */
       background-size: cover;
-      height: 300px;
+      height: 600px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -59,44 +59,52 @@
   </ul>
 
   <!-- Hero Section (Imagem de fundo com título) -->
+   
   <div class="hero-image">
-    <h1 class="black-text">Faça mercado no iFood</h1>
+    <div class="row">
+      <div class="col s12 m12">
+        <h1 class="black-text center mt-3 mb-4 mx-2">Faça mercado no iFood</h1>
+
+      </div>
+      <div class="col s12 m12">
+        <div class="container center-align" style="padding: 30px 0;">
+          <div class="row">
+            <div class="col s12 m8 offset-m2">
+              <div class="input-field" style="display: flex; align-items: center;">
+                <!-- Ícone de pesquisa -->
+                <i class="material-icons prefix">search</i>
+                <!-- Caixa de pesquisa -->
+                <input id="search" type="text" class="validate" style="flex-grow: 1;">
+                <label for="search">Em qual endereço você está?</label>
+                <!-- Botão de pesquisa -->
+                <button class="btn waves-effect waves-light red" style="margin-left: 10px;border-radius: 8px;">Ver mercados
+                  próximos</button>
+              </div>
+            </div>
+          </div>
+          <div class="chips-container">
+            <div class="chips">
+              <div class="chip"><a href="" class="grey-text">Frios</a></div>
+              <div class="chip"><a href="" class="grey-text">Laticínios</a></div>
+              <div class="chip"><a href="" class="grey-text">Feira</a></div>
+              <div class="chip"><a href="" class="grey-text">Bebidas</a></div>
+              <div class="chip"><a href="" class="grey-text">Doces</a></div>
+              <div class="chip"><a href="" class="grey-text">Massas frescas</a></div>
+              <div class="chip"><a href="" class="grey-text">Limpeza</a></div>
+              <div class="chip"><a href="" class="grey-text">Padaria</a></div>
+              <div class="chip"><a href="" class="grey-text">Higiene</a></div>
+              <div class="chip"><a href="" class="grey-text">Congelados</a></div>
+              <div class="chip"><a href="" class="grey-text">Carnes</a></div>
+              <div class="chip"><a href="" class="grey-text">Cerveja</a></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
 
   <!-- Pesquisa -->
-  <div class="container center-align" style="padding: 30px 0;">
-    <div class="row">
-      <div class="col s12 m8 offset-m2">
-        <div class="input-field" style="display: flex; align-items: center;">
-          <!-- Ícone de pesquisa -->
-          <i class="material-icons prefix">search</i>
-          <!-- Caixa de pesquisa -->
-          <input id="search" type="text" class="validate" style="flex-grow: 1;">
-          <label for="search">Em qual endereço você está?</label>
-          <!-- Botão de pesquisa -->
-          <button class="btn waves-effect waves-light red" style="margin-left: 10px;border-radius: 8px;">Ver mercados
-            próximos</button>
-        </div>
-      </div>
-    </div>
-    <div class="chips-container">
-      <div class="chips">
-        <div class="chip"><a href="" class="grey-text">Frios</a></div>
-        <div class="chip"><a href="" class="grey-text">Laticínios</a></div>
-        <div class="chip"><a href="" class="grey-text">Feira</a></div>
-        <div class="chip"><a href="" class="grey-text">Bebidas</a></div>
-        <div class="chip"><a href="" class="grey-text">Doces</a></div>
-        <div class="chip"><a href="" class="grey-text">Massas frescas</a></div>
-        <div class="chip"><a href="" class="grey-text">Limpeza</a></div>
-        <div class="chip"><a href="" class="grey-text">Padaria</a></div>
-        <div class="chip"><a href="" class="grey-text">Higiene</a></div>
-        <div class="chip"><a href="" class="grey-text">Congelados</a></div>
-        <div class="chip"><a href="" class="grey-text">Carnes</a></div>
-        <div class="chip"><a href="" class="grey-text">Cerveja</a></div>
-      </div>
-    </div>
-  </div>
-  </div>
 
 
   <div class="container">
