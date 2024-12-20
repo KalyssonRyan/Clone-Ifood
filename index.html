@@ -1,29 +1,360 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clone Ifood</title>
-    <link rel="stylesheet" href="css/materialize.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iFood - Página Inicial</title>
+  <!-- Importação do Materialize CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    .hero-image {
+      background-image: url('imagens/fundo.png');
+      /* Adicione sua imagem aqui */
+      background-size: cover;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2em;
+    }
 
+    .card-image img {
+      height: 180px;
+      object-fit: cover;
+    }
+  </style>
 </head>
-<body>
-    <nav>
-        <div class="navbar-fixed">
-            <div class="nav-wrapper grey lighten-3 ">
-                <a href="#!" class="brand-logo"><img src="img/ifood_logo.svg" alt="" style="width: 60px; height: 50px;">
-              </a>
-              <ul id="nav-mobile" class="right hide-on-med-and-down ">
-                <li class=""><a href="#" class="grey-text text-darken-1">Entregador</a></li>
-                <li><a href="#" class="grey-text text-darken-1">Restaurante e Mercado</a></li>
-                <li><a href="#" class="grey-text text-darken-1">Carreiras</a></li>
-                <li><a href="#" class="grey-text text-darken-1">Ifood Card</a></li>
-                <a class="waves-effect waves-light btn-large red">Entrar</a>
-              </ul>
-            </div>
 
+<body>
+
+  <!-- Navbar com Sidenav (Menu Hambúrguer) -->
+  <nav class="nav-wrapper white">
+    <div class="container">
+      <a href="#" class="brand-logo"><img src="imagens/logo.png" width="50px"></a>
+      <!-- Menu para dispositivos grandes (desktop) -->
+      <ul class="right hide-on-small-only">
+        <li><a href="#" class=" grey-text">Início</a></li>
+        <li><a href="#" class=" grey-text">Restaurantes</a></li>
+        <li><a href="#" class=" grey-text">Ofertas</a></li>
+        <li><a href="#" class=" grey-text">Promoções</a></li>
+        <li><a href="#" class="waves-effect waves-light btn white-text red" style="border-radius: 8px;">Entrar</a></li>
+      </ul>
+      <!-- Icone de Menu (Hambúrguer) para dispositivos pequenos -->
+      <a href="#" data-target="mobile-menu" class="sidenav-trigger">
+        <i class="material-icons " style="color: grey;">menu</i>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Menu Lateral (Sidenav) para Dispositivos Móveis -->
+  <ul class="sidenav" id="mobile-menu">
+    <li><a href="#">Início</a></li>
+    <li><a href="#">Restaurantes</a></li>
+    <li><a href="#">Ofertas</a></li>
+    <li><a href="#">Promoções</a></li>
+    <li><a href="#">Entrar</a></li>
+  </ul>
+
+  <!-- Hero Section (Imagem de fundo com título) -->
+  <div class="hero-image">
+    <h1 class="black-text">Faça mercado no iFood</h1>
+  </div>
+
+  <!-- Pesquisa -->
+  <div class="container center-align" style="padding: 30px 0;">
+    <div class="row">
+      <div class="col s12 m8 offset-m2">
+        <div class="input-field" style="display: flex; align-items: center;">
+          <!-- Ícone de pesquisa -->
+          <i class="material-icons prefix">search</i>
+          <!-- Caixa de pesquisa -->
+          <input id="search" type="text" class="validate" style="flex-grow: 1;">
+          <label for="search">Em qual endereço você está?</label>
+          <!-- Botão de pesquisa -->
+          <button class="btn waves-effect waves-light red" style="margin-left: 10px;border-radius: 8px;">Ver mercados
+            próximos</button>
         </div>
-      </nav>
-      <script src="js/materialize.js"></script>
+      </div>
+    </div>
+    <div class="chips-container">
+      <div class="chips">
+        <div class="chip"><a href="" class="grey-text">Frios</a></div>
+        <div class="chip"><a href="" class="grey-text">Laticínios</a></div>
+        <div class="chip"><a href="" class="grey-text">Feira</a></div>
+        <div class="chip"><a href="" class="grey-text">Bebidas</a></div>
+        <div class="chip"><a href="" class="grey-text">Doces</a></div>
+        <div class="chip"><a href="" class="grey-text">Massas frescas</a></div>
+        <div class="chip"><a href="" class="grey-text">Limpeza</a></div>
+        <div class="chip"><a href="" class="grey-text">Padaria</a></div>
+        <div class="chip"><a href="" class="grey-text">Higiene</a></div>
+        <div class="chip"><a href="" class="grey-text">Congelados</a></div>
+        <div class="chip"><a href="" class="grey-text">Carnes</a></div>
+        <div class="chip"><a href="" class="grey-text">Cerveja</a></div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+
+      <!-- Restaurante -->
+      <div class="col s12 m6">
+        <div class="card red accent-4 white-text hoverable">
+          <div class="card-content ">
+            <span class="card-title">Restaurante</span>
+            <img src="https://static.ifood-static.com.br/image/upload/f_auto/webapp/landingV2/restaurant.png"
+              alt="Hamburguer" class="responsive-img ">
+          </div>
+          <div class="card-action col s12">
+            <a href="#" class="btn red accent-4 white-text valign-wrapper col s12" style="border-radius: 8px;">Ver
+              opções<i class="material-icons">chevron_right</i></a>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Mercado -->
+      <div class="col s12 m6">
+        <div class="card  light-green lighten-1 hoverable" style="border-radius: 8px;">
+          <div class="card-content">
+            <span class="card-title">Mercado</span>
+            <img src="https://static.ifood-static.com.br/image/upload/f_auto/webapp/landingV2/market.png"
+              alt="Carrinho de compras" class="responsive-img">
+          </div>
+          <div class="card-action col s12">
+            <a href="#" class="btn light-green lighten-1 white-text valign-wrapper col s12">Buscar lojas<i
+                class="material-icons">chevron_right</i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bebidas -->
+      <div class="col s12 m4">
+        <div class="card yellow center-align hoverable">
+          <div class="card-content">
+            <img src="https://static.ifood-static.com.br/image/upload/f_auto/webapp/landingV2/drinks.png" alt="Bebidas"
+              class="responsive-img">
+            <p class="black-text valign-wrapper">Bebidas<i class="material-icons">chevron_right</i></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Farmácia -->
+      <div class="col s12 m4">
+        <div class="card pink lighten-4 center-align hoverable">
+          <div class="card-content">
+            <img src="https://static.ifood-static.com.br/image/upload/f_auto/webapp/landingV2/pharmacy.png"
+              alt="Farmácia" class="responsive-img">
+            <p class="black-text valign-wrapper">Farmácia<i class="material-icons">chevron_right</i></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pet shop -->
+      <div class="col s12 m4">
+        <div class="card purple darken-1 center-align hoverable">
+          <div class="card-content">
+            <img src="https://static.ifood-static.com.br/image/upload/f_auto/webapp/landingV2/petshop.png"
+              alt="Pet shop" class="responsive-img">
+            <p class="black-text valign-wrapper">Pet shop<i class="material-icons">chevron_right</i></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Categorias de Restaurantes -->
+  <div class="container">
+    <h4>Os melhores restaurantes</h4>
+    <div class="row">
+      <div class="col s12 m3">
+        <div class="card">
+          <ul class="collection">
+            <li class="collection-item avatar"> <img
+                src="https://static.ifood-static.com.br/image/upload/t_thumbnail/logosgde/Logo McDonald_MCDON_DRIV15.jpg?imwidth=64"
+                alt="" class="circle"> <span class="title">McDonald's</span>
+              <p>Lanches</p> <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col s12 m3">
+        <div class="card">
+          <ul class="collection">
+            <li class="collection-item avatar"> <img
+                src="https://static.ifood-static.com.br/image/upload/t_thumbnail/logosgde/201910292243_94aaf166-84cc-4ebf-a35d-d223be34d01f.png?imwidth=64"
+                alt="" class="circle"> <span class="title">Coco Bambu</span>
+              <p>Frutos do mar</p> <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col s12 m3">
+        <div class="card">
+          <ul class="collection">
+            <li class="collection-item avatar"> <img
+                src="https://static.ifood-static.com.br/image/upload/t_thumbnail/logosgde/d4a3984f-2b73-4f46-99df-1d6bc79ff293/202001031317_CXpO_i.png?imwidth=64 1x, https://static.ifood-static.com.br/image/upload/t_thumbnail/logosgde/d4a3984f-2b73-4f46-99df-1d6bc79ff293/202001031317_CXpO_i.png?imwidth=128 2x"
+                alt="" class="circle"> <span class="title">China In Box</span>
+              <p>chinesa</p> <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col s12 m3">
+        <div class="card">
+          <ul class="collection">
+            <li class="collection-item avatar"> <img
+                src="https://static.ifood-static.com.br/image/upload/t_thumbnail/logosgde/201801231937__HABIB_VERDE.jpg?imwidth=128"
+                alt="" class="circle"> <span class="title">Habib's</span>
+              <p>Lanches</p> <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+            </li>
+          </ul>
+        </div>
+      </div> 
+      <div class="col s12 m3">
+        <div class="card">
+          <ul class="collection">
+            <li class="collection-item avatar"> <img
+                src="https://static.ifood-static.com.br/image/upload/t_thumbnail/logosgde/201906182008_2b157a73-7564-4733-94c1-8d0376e7bb39.png?imwidth=128"
+                alt="" class="circle"> <span class="title">Outback Steakhouse</span>
+              <p>Lanches</p> <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+            </li>
+          </ul>
+        </div>
+      </div> <!-- Adicione mais colunas e cartões aqui conforme necessário -->
+
+      
+    </div>
+    <!-- Imagens de desconto -->
+   
+   
+     <div class="row">
+       <div class="col s12 m4">
+         <a href="#"><img src="https://static.ifood-static.com.br/image/upload/t_high,q_100/webapp/landing/landing-banner-1.png" class="responsive-img" style="width: 500px;"></a>
+       </div>
+       <div class="col s12 m4">
+         <a href="#"><img src="https://static.ifood-static.com.br/image/upload/t_high,q_100/webapp/landing/landing-banner-2.png" class="responsive-img"></a>
+       </div>
+       <div class="col s12 m4">
+         <a href=""><img src="https://static.ifood-static.com.br/image/upload/t_high,q_100/webapp/landing/landing-banner-3.png" class="responsive-img"></a>
+       </div>
+     </div>
+
+
+  <h4>Os Melhores mercados</h4>
+  <div class="row">
+    <div class="col s12 m3">
+      <div class="card">
+        <ul class="collection">
+          <li class="collection-item avatar"> <img
+              src="https://static.ifood-static.com.br/image/upload/t_thumbnail/logosgde/0dbcb1e9-b354-4306-b0f7-d485ac655131/202004061634_lP8b_.jpeg?imwidth=128"
+              alt="" class="circle"> <span class="title">Dia Supermercado</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col s12 m3">
+      <div class="card">
+        <ul class="collection">
+          <li class="collection-item avatar"> <img
+              src="https://static.ifood-static.com.br/image/upload/t_thumbnail/logosgde/202010121938_31dbd467-bb46-4884-8879-e545789acc39.png?imwidth=128"
+              alt="" class="circle"> <span class="title">Big</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col s12 m3">
+      <div class="card">
+        <ul class="collection">
+          <li class="collection-item avatar"> <img
+              src="https://static.ifood-static.com.br/image/upload/t_thumbnail/logosgde/595f29c3-3264-4e74-8089-cec0421420fb/202002101723_dmdz_i.jpg?imwidth=128"
+              alt="" class="circle"> <span class="title">Eataly</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Ofertas -->
+  <div class="container">
+    <h5>Ofertas do Dia</h5>
+    <div class="row">
+      <div class="col s12 m6 l4">
+        <div class="card">
+          <div class="card-image">
+            <img src="https://via.placeholder.com/300x200" alt="Oferta">
+          </div>
+          <div class="card-content">
+            <p>Oferta Especial 1</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l4">
+        <div class="card">
+          <div class="card-image">
+            <img src="https://via.placeholder.com/300x200" alt="Oferta">
+          </div>
+          <div class="card-content">
+            <p>Oferta Especial 2</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l4">
+        <div class="card">
+          <div class="card-image">
+            <img src="https://via.placeholder.com/300x200" alt="Oferta">
+          </div>
+          <div class="card-content">
+            <p>Oferta Especial 3</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="page-footer blue">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6">
+          <h5 class="white-text">iFood</h5>
+          <p class="grey-text text-lighten-4">Compre seu alimento preferido com apenas um clique.</p>
+        </div>
+        <div class="col s12 m6">
+          <h5 class="white-text">Links úteis</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#">Sobre nós</a></li>
+            <li><a class="grey-text text-lighten-3" href="#">Ajuda</a></li>
+            <li><a class="grey-text text-lighten-3" href="#">Contate-nos</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2024 iFood, Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Importação do jQuery e Materialize JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+    // Inicialização do menu hambúrguer (Sidenav)
+    $(document).ready(function () {
+      $('.sidenav').sidenav(); // Inicializa o sidenav (menu hambúrguer)
+    });
+  </script>
+
 </body>
+
 </html>
