@@ -104,3 +104,19 @@ div a.brand-logo img {
 a.grey-text.text-darken-3 {
   font-size: 1.5rem;
 }
+
+h1.black-text.center.mt-3.mb-4.mx-2 {
+  /* font-size: 3rem; */
+  /* font-family: 'iFood RC Titulos'; */
+  font-weight: 500;
+}
+
+.card-content.red.accent-4 {
+  height: 19rem;
+}
+a.btn.red.accent-4.white-text.valign-wrapper.col.s12.center-align {
+  margin-top: 6rem;
+}
+.card.red.accent-4.white-text.hoverable {
+  border-radius: 34px;
+}
