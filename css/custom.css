@@ -1,8 +1,72 @@
+@font-face {
+  font-family: iFood RC Titulos;
+  src: url(../fonts/iFoodRCTitulos-Light.woff2) format("woff2"),url(../fonts/iFoodRCTitulos-Light.woff) format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: iFood RC Titulos;
+  src: url(../fonts/iFoodRCTitulos-Medium.woff2) format("woff2"),url(../fonts/iFoodRCTitulos-Medium.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: iFood RC Titulos;
+  src: url(../fonts/iFoodRCTitulos-Regular.woff2) format("woff2"),url(../fonts/iFoodRCTitulos-Regular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: iFood RC Titulos;
+  src: url(../fonts/iFoodRCTitulos-Bold.woff2) format("woff2"),url(../fonts/iFoodRCTitulos-Bold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: iFood RC Textos;
+  src: url(../fonts/iFoodRCTextos-Light.woff2) format("woff2"),url(../fonts/iFoodRCTextos-Light.woff) format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: iFood RC Textos;
+  src: url(../fonts/iFoodRCTextos-Regular.woff2) format("woff2"),url(../fonts/iFoodRCTextos-Regular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: iFood RC Textos;
+  src: url(../fonts/iFoodRCTextos-Medium.woff2) format("woff2"),url(../fonts/iFoodRCTextos-Medium.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: iFood RC Textos;
+  src: url(../fonts/iFoodRCTextos-Bold.woff2) format("woff2"),url(../fonts/iFoodRCTextos-Bold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap
+}
 :root{
     font-size:62.5%;
   }
   body{
     font-size: 1.6rem;
+    font-family: iFood RC Titulos, iFood RC Textos;
   }
   .hero-image {
     background-image: url('../img/fundo.png');
@@ -24,9 +88,19 @@
     border-bottom: none;
   }
   nav.nav-wrapper.white {
-  height: 10rem;
+  height: 14rem;
   align-content: center;
   }
   img.responsive-img.ifood-final {
     width: 67px;
+}
+
+div a.brand-logo img {
+  width: 84px;
+  /* height: 40px; */
+  margin-top: 1rem;
+}
+
+a.grey-text.text-darken-3 {
+  font-size: 1.5rem;
 }
